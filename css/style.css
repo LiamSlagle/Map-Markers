@@ -1,0 +1,9 @@
+body {font-family: 'Helvetica', sans-serif;}
+.container h3 {text-align: center;}
+.container p {text-align: center;}
+
+#map {
+	height: 400px;
+	width: 100%;
+	margin: 20px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Basics -->
+		<title>Google Maps Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    	<!-- JS -->
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOMoHL-BIZmZCDkWL433MFSQ1gDzyTrW8&callback=initMap"></script>
+    	<script type="text/javascript" src="js/code.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+  	<body>
+  		<div class="container"> 			
+	    	<h3>Google Maps Demo</h3>
+
+	    	<p>New Marker:</p>
+	  		
+	    	<form class="form-horizontal">
+	    		<div class="form-group">
+	    			<label class="control-label col-sm-2" for="name">Name:</label>
+	    			<div class="col-sm-10">
+	    				<input type="text" class="form-control" id="name" placeholder="Choose a name.">
+	    			</div>
+	    		</div>
+	    		<div class="form-group">
+	    			<label class="control-label col-sm-2" for="longitude">Longitude:</label>
+	    			<div class="col-sm-10">
+	    				<input type="number" class="form-control" id="lng" placeholder="Enter longitude.">
+	    			</div>
+	    		</div>
+	    		<div class="form-group">
+	    			<label class="control-label col-sm-2" for="latitude">Latitude:</label>
+	    			<div class="col-sm-10">
+	    				<input type="number" class="form-control" id="lat" placeholder="Enter latitude.">
+	    			</div>
+	    		</div>
+	    		<div class="form-group">
+	    			<div class="col-sm-offset-2 col-sm-10">
+	    				<button type="submit" class="btn btn-default" id="submitBtn">Submit</button>
+	    			</div>
+	    		</div>
+	    	</form>
+
+	    	<div id="map"></div>
+  		</div>
+  	</body>
+</html>
