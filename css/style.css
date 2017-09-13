@@ -1,6 +1,5 @@
 body {font-family: 'Helvetica', sans-serif;}
-.container h3 {text-align: center;}
-.container p {text-align: center;}
+.container p {font-weight: bold;}
 
 #map {
 	height: 400px;
