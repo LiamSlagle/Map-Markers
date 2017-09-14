@@ -18,32 +18,49 @@
     </head>
   	<body>
   		<div class="container"> 			
-	    	<p>New Marker:</p>	
-	    	<form class="form-horizontal">
-	    		<div class="form-group">
-	    			<label class="control-label col-sm-2" for="name">Name:</label>
-	    			<div class="col-sm-10">
-	    				<input type="text" class="form-control" id="name" value="Cicinnati">
-	    			</div>
-	    		</div>
-	    		<div class="form-group">
-	    			<label class="control-label col-sm-2" for="longitude">Longitude:</label>
-	    			<div class="col-sm-10">
-	    				<input type="number" class="form-control" id="lng" value="-84.5120">
-	    			</div>
-	    		</div>
-	    		<div class="form-group">
-	    			<label class="control-label col-sm-2" for="latitude">Latitude:</label>
-	    			<div class="col-sm-10">
-	    				<input type="number" class="form-control" id="lat" value="39.1031">
-	    			</div>
-	    		</div>
-	    		<div class="form-group">
-	    			<div class="col-sm-offset-2 col-sm-10">
-	    				<button type="submit" class="btn btn-default" id="submitBtn">Submit</button>
-	    			</div>
-	    		</div>
-	    	</form>
+	  		<div class="row">
+	  			<div class="col-md-6">
+	    			<p class="col-md-offset-2">New Marker:</p>
+			    	<form class="form-horizontal">
+			    		<div class="form-group">
+			    			<label class="control-label col-sm-2" for="name">Name:</label>
+			    			<div class="col-sm-10">
+			    				<input type="text" class="form-control" id="name" value="Cicinnati">
+			    			</div>
+			    		</div>
+			    		<div class="form-group">
+			    			<label class="control-label col-sm-2" for="longitude">Longitude:</label>
+			    			<div class="col-sm-10">
+			    				<input type="number" class="form-control" id="lng" value="-84.5120">
+			    			</div>
+			    		</div>
+			    		<div class="form-group">
+			    			<label class="control-label col-sm-2" for="latitude">Latitude:</label>
+			    			<div class="col-sm-10">
+			    				<input type="number" class="form-control" id="lat" value="39.1031">
+			    			</div>
+			    		</div>
+			    		<div class="form-group">
+			    			<div class="col-sm-offset-2 col-sm-10">
+			    				<button type="submit" class="btn btn-default" id="submitBtn">Submit</button>
+			    			</div>
+			    		</div>
+			    	</form>
+			    </div>
+			    <div class="col-md-6 markerList">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Longitude</th>
+								<th>Latitude</th>
+							</tr>
+						</thead>
+						<tbody id="markerRows"></tbody>
+					</table>
+			    </div>
+		    </div>
+
 	    	<div id="map"></div>
   		</div>
   	</body>

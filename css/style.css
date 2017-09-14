@@ -1,5 +1,6 @@
 body {font-family: 'Helvetica', sans-serif;}
 .container p {font-weight: bold;}
+.markerList {max-height: 200px; overflow-y: auto;}
 
 #map {
 	height: 400px;

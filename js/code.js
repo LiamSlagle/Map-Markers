@@ -17,6 +17,21 @@ function init() {
 			title: name
 		});
 
+		var r = document.createElement('tr');
+		var d1 = document.createElement('td');
+		var d2 = document.createElement('td');
+		var d3 = document.createElement('td');
+
+		d1.appendChild(document.createTextNode(name));
+		d2.appendChild(document.createTextNode(x));
+		d3.appendChild(document.createTextNode(y));
+
+		r.appendChild(d1);
+		r.appendChild(d2);
+		r.appendChild(d3);
+
+		document.getElementById("markerRows").appendChild(r);
+
 		e.preventDefault();
 	});
 }
